@@ -14,6 +14,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 288px);
   gap: 3rem;
+  justify-content: center;
 }
 
 .event-card-item {
@@ -57,3 +58,9 @@ body {
   font-size: 0.875rem;
 }
 /* End Main Content */
+
+@media screen and (min-width: 768px) {
+  .event-container {
+    justify-content: flex-start;
+  }
+}

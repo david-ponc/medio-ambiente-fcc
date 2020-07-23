@@ -121,6 +121,7 @@ h4 {
   background-color: var(--white-color);
   border: 1px solid var(--gray-color-2);
   border-radius: 0.5rem;
+  z-index: 1000;
 }
 
 .dropdown-item {

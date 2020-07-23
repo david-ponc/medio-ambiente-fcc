@@ -26,7 +26,7 @@ body {
   max-width: var(--max-width-view);
   color: var(--gray-color-1);
   font-size: 0.875rem;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .breadcrumb a {
@@ -136,5 +136,8 @@ body {
     height: 100%;
     width: auto;
     margin: 0 auto;
+  }
+  .hero-content {
+    padding: 2rem 0;
   }
 }
