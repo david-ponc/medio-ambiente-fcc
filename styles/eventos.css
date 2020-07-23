@@ -1,0 +1,140 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  color: var(--gray-color-8);
+}
+
+.hero {
+  width: 100%;
+  height: var(--height-hero);
+  background: linear-gradient(
+      rgba(var(--hero-gradient-color-1), 0.42),
+      rgba(var(--hero-gradient-color-2), 1)
+    ),
+    url(/medio-ambiente-fcc/eventos/assets/semana-sin-unicel/heroImage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: var(--max-width-view);
+  color: var(--gray-color-1);
+  font-size: 0.875rem;
+  padding: 2rem 0;
+}
+
+.breadcrumb a {
+  color: var(--primary-color-2);
+}
+
+.breadcrumb img {
+  margin: 0 0.5rem;
+}
+
+.breadcrumb span {
+  color: var(--gray-color-5);
+}
+
+.event-content {
+  max-width: var(--max-width-view);
+  margin: 2rem auto;
+  border-radius: 0.875rem;
+  border: 1px solid var(--gray-color-2);
+  background-color: var(--white-color);
+  padding: 2rem;
+}
+
+.event-content p {
+  margin-bottom: 1.5rem;
+}
+
+.event-content h3 {
+  margin-bottom: 1rem;
+}
+
+.event-content-gallery {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.event-content-gallery img {
+  max-width: 250px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-color-1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event-content-gallery img:hover {
+  border: 1px solid var(--primary-color-5);
+}
+
+.fullscreen {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-exit {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background-color: var(--gray-color-2);
+  border-radius: 50%;
+  top: 1rem;
+  left: 1rem;
+  z-index: 101;
+  cursor: pointer;
+}
+
+.fullscreen-back {
+  width: 120%;
+  height: 120vh;
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  z-index: 10;
+  /* background: rgba(var(--shadow-color), 1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  filter: blur(2rem);
+}
+
+.fullscreen-image {
+  height: auto;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .fullscreen-image {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+  }
+}
