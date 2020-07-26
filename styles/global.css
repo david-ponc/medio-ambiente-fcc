@@ -86,7 +86,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  border-bottom: 1px solid var(--gray-color-2);
+  border-bottom: 1px solid var(--gray-color-3);
 }
 
 .brand {
@@ -187,7 +187,7 @@ h4 {
 /* Begin Footer */
 .footer {
   width: 100%;
-  border-top: 1px solid var(--gray-color-2);
+  border-top: 1px solid var(--gray-color-3);
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--gray-color-6);
