@@ -93,10 +93,12 @@ h4 {
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 0.5rem;
+  color: var(--gray-color-8);
 }
 
-.brand h3 {
+.brand h4 {
   align-self: center;
+  font-weight: 600;
 }
 
 /* Begin Dropdown */
