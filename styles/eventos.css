@@ -12,11 +12,11 @@ main {
 .hero {
   width: 100%;
   height: var(--height-hero);
-  background: linear-gradient(
+  /* background: linear-gradient(
       rgba(var(--hero-gradient-color-1), 0.42),
       rgba(var(--hero-gradient-color-2), 1)
     ),
-    url(/medio-ambiente-fcc/eventos/assets/semana-sin-unicel/heroImage.jpg);
+    url(/medio-ambiente-fcc/eventos/assets/semana-sin-unicel/heroImage.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,10 +39,7 @@ main {
 
 .breadcrumb img {
   margin: 0 0.5rem;
-}
-
-.breadcrumb span {
-  color: var(--gray-color-5);
+  transform: rotateZ(180deg);
 }
 
 .event-content {

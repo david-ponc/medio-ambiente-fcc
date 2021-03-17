@@ -54,3 +54,9 @@ main {
     justify-content: flex-start;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .event-container {
+    max-width: 100%;
+  }
+}
